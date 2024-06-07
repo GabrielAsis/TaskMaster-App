@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_task_bg"
+    android:orientation="vertical"
+    tools:context=".NewTaskSheet">
+
+
+    <TextView
+        android:id="@+id/newTaskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/montserrat"
+        android:includeFontPadding="false"
+        android:text="New Task"
+        android:textColor="@color/text"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/custom_input2"
+        android:ems="10"
+        android:fontFamily="@font/nunito_sans"
+        android:hint="Enter task here..."
+        android:includeFontPadding="false"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:textColor="@color/text"
+        android:textColorHint="@color/gray"
+        android:textSize="14sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/DropDownStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/dark_blue"
+        android:backgroundTintMode="add"
+        android:foregroundTint="#D50808"
+        android:foregroundTintMode="add"
+        android:inputType="none"
+        android:textColorHint="@color/gray"
+        app:boxBackgroundColor="#040608"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/text"
+        app:boxStrokeErrorColor="@color/blue"
+        app:counterOverflowTextColor="@color/gray"
+        app:counterTextColor="@color/blue"
+        app:cursorErrorColor="@color/blue"
+        app:endIconMode="dropdown_menu"
+        app:endIconTint="@color/blue"
+        app:errorTextColor="@color/blue"
+        app:helperTextTextColor="@color/blue"
+        app:hintTextColor="@color/blue"
+        app:placeholderTextColor="@color/gray"
+        app:prefixTextColor="@color/blue"
+        app:suffixTextColor="@color/blue">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:fontFamily="@font/nunito_sans"
+            android:hint="Category"
+            android:includeFontPadding="false"
+            android:inputType="none"
+            android:textColor="@color/blue"
+            android:textColorHighlight="@color/blue"
+            android:textColorHint="@color/blue"
+            android:textColorLink="@color/blue"
+            android:textSize="14sp"
+            app:dropDownBackgroundTint="@color/dark_blue"
+            app:simpleItemSelectedColor="@color/blue" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/timePickerButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_dropdown"
+        android:fontFamily="@font/nunito_sans"
+        android:includeFontPadding="false"
+        android:text="Select Time &amp; Date"
+        android:textColor="#040608"
+        android:textColorHighlight="@color/text"
+        android:textSize="14sp"
+        app:backgroundTint="@color/blue"
+        app:icon="@drawable/ic_clock_white"
+        app:iconGravity="textStart"
+        app:iconPadding="12dp"
+        app:iconSize="14dp"
+        app:iconTint="#040608" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancelButton"
+            android:layout_width="120dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="18dp"
+            android:fontFamily="@font/nunito_sans"
+            android:includeFontPadding="false"
+            android:text="Cancel"
+            android:textColor="@color/background"
+            android:textColorHighlight="@color/background"
+            android:textSize="12sp"
+            app:backgroundTint="@color/blue"
+            app:cornerRadius="20dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/saveButton"
+            android:layout_width="120dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_sans"
+            android:includeFontPadding="false"
+            android:text="Add"
+            android:textColor="@color/background"
+            android:textColorHighlight="@color/background"
+            android:textSize="12sp"
+            app:backgroundTint="@color/blue"
+            app:cornerRadius="20dp" />
+    </LinearLayout>
+
+</LinearLayout>

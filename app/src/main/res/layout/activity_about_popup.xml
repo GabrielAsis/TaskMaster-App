@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popup_bg"
+    android:orientation="vertical"
+    android:scrollbarStyle="outsideInset"
+    tools:context=".AboutPopup">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical"
+        android:verticalScrollbarPosition="right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/closeButton">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/aboutTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="6dp"
+                android:fontFamily="@font/unica_one"
+                android:text="About"
+                android:textAlignment="center"
+                android:textColor="@color/text"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/aboutDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/work_sans"
+                android:text="Welcome to TaskMaster! Your personal task management companion designed to help you organize your daily activities with ease. Created using Android Studio with Shared Preferences."
+                android:textAlignment="center"
+                android:textColor="@color/text"
+                android:textSize="11sp"
+                app:lineHeight="16sp" />
+
+            <TextView
+                android:id="@+id/instructionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="6dp"
+                android:fontFamily="@font/unica_one"
+                android:text="instructions"
+                android:textAlignment="center"
+                android:textColor="@color/text"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/addTaskIns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Adding a new task:"
+                android:textColor="@color/text"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:lineHeight="20sp" />
+
+            <TextView
+                android:id="@+id/addTaskDescIns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/work_sans"
+                android:text="1. Tap the &quot;ADD TASK&quot; button with the plus icon at the bottom right corner of the screen.\n\n2. A &quot;New Task&quot; window will appear. Enter the name of your task.\n\n3. Next, select the category of your task from the dropdown menu\n\n4. Select a due date and time for your task.\n\n 4. Finally, tap on the &quot;ADD&quot; button to add your task to the list."
+                android:textColor="@color/text"
+                android:textSize="11sp"
+                app:lineHeight="20sp" />
+
+            <TextView
+                android:id="@+id/editTaskTitleIns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Editing a task:"
+                android:textColor="@color/text"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:lineHeight="20sp" />
+
+            <TextView
+                android:id="@+id/editTaskDescIns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/work_sans"
+                android:text="1. Tap on the task you want to edit.\n\n2. An &quot;Edit Task&quot; window will appear. Edit the details of your task.\n\n3. Finally, tap on the &quot;SAVE&quot; button to save your changes."
+                android:textColor="@color/text"
+                android:textSize="11sp"
+                app:lineHeight="20sp" />
+
+            <TextView
+                android:id="@+id/additional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Additional Features:"
+                android:textColor="@color/text"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:lineHeight="20sp" />
+
+            <TextView
+                android:id="@+id/additionalDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:fontFamily="@font/work_sans"
+                android:text="1. Navigation: The tasks are organized into categories, and you can navigate to each category using the navigation drawer which accessible by tapping on the menu icon.\n\n2. Setting Important: To mark a task as IMPORTANT, tap the star icon on the right side of the task. This will move the task to the IMPORTANT category.\n\n3. Setting Completed &amp; Deleting tasks: To mark a task as COMPLETED, tap the circle icon. This  will move the task to the COMPLETED category and allowing you to delete the task by tapping on the delete icon."
+                android:textColor="@color/text"
+                android:textSize="11sp"
+                app:lineHeight="20sp" />
+
+            <TextView
+                android:id="@+id/madeBy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="@font/unica_one"
+                android:text="Made by Gabriel Asis"
+                android:textAlignment="center"
+                android:textColor="@color/text"
+                android:textSize="18sp"
+                app:lineHeight="20sp" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <ImageButton
+        android:id="@+id/closeButton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="25dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_close" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

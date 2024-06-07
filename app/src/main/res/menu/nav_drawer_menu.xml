@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+    <group
+        android:id="@+id/sections"
+        android:checkableBehavior="single">
+
+        <item
+            android:icon="@drawable/ic_all_white"
+            android:id="@+id/all"
+            android:title="All" />
+
+        <item
+            android:icon="@drawable/ic_calendar_white"
+            android:id="@+id/today"
+            android:title="Today" />
+
+        <item
+            android:icon="@drawable/ic_star_white"
+            android:id="@+id/important"
+            android:title="Important" />
+
+        <item
+            android:icon="@drawable/ic_clock_white"
+            android:id="@+id/scheduled"
+            android:title="Scheduled" />
+    </group>
+
+    <group
+        android:id="@+id/categories"
+        android:checkableBehavior="single">
+
+        <item
+            android:icon="@drawable/ic_chores"
+            android:id="@+id/chores"
+            android:title="Chores" />
+
+        <item
+            android:icon="@drawable/ic_work"
+            android:id="@+id/work"
+            android:title="Work" />
+
+        <item
+            android:icon="@drawable/ic_school"
+            android:id="@+id/school"
+            android:title="School" />
+
+        <item
+            android:icon="@drawable/ic_other"
+            android:id="@+id/other"
+            android:title="Other" />
+
+    </group>
+
+    <group
+        android:id="@+id/compeleted_group"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/completed"
+            android:icon="@drawable/ic_completed_white"
+            android:title="Completed" />
+
+    </group>
+
+</menu>
